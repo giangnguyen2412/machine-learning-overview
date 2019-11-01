@@ -15,3 +15,18 @@ Meta-learning, also known as “learning to learn”, intends to design models t
 So the question is: **How can we then learn a model that generalize well even with few training instances?**
 
 Humans generalize well because we never learn from scratch. In a broader sense, meta-learning can refer to the learning of meta-information (e.g. hyperparameters or network structures). Kids who have seen cats and birds only a few times can quickly tell them apart. People who know how to ride a bike are likely to discover the way to ride a motorcycle fast with little or even no demonstration. Is it possible to design a machine learning model with similar properties — learning new concepts and skills fast with a few training examples? That’s essentially what meta-learning aims to solve.
+
+## Interpretable Machine Learning
+Existing work on interpreting models approach the problem
+from two directions.
+
+The first line of work computes the
+gradient of the output of the correct class with respect to the
+input vector for the given model, and uses it as a saliency
+map for masking the input.
+
+Another line
+of research approximates the model to be interpreted via
+a locally additive model in order to explain the difference
+between the model output and some “reference” output in
+terms of the difference between the input and some “reference” input
