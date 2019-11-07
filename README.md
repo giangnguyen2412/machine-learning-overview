@@ -30,3 +30,42 @@ of research approximates the model to be interpreted via
 a locally additive model in order to explain the difference
 between the model output and some “reference” output in
 terms of the difference between the input and some “reference” input
+
+## Continual learning
+### Contemporary problems
+In machine learning, one of the most basic paradigms is
+to clearly distinguish between a training and testing phase.
+Once a model is trained and validated, it switches to a test
+mode: the model gets frozen and deployed for inference
+on previously unseen data, without ever making changes to
+the model parameters again. This setup assumes a static
+world, with no distribution shifts over time. Further, it assumes a static task specification, so no new requirements in
+terms of output (e.g. novel category labels) or new tasks
+added over time. Such strong division between training and
+testing makes it easier to develop novel machine learning
+algorithms, yet is also very restrictive.
+
+Inspired by biological systems, the field of incremental
+learning, also referred to as continual learning or lifelong
+learning, aims at breaking this strong barrier
+between the training and testing phase. The goal is to develop algorithms that do not stop learning, but rather keep
+updating the model parameters over time. This holds the
+promise of a system that gradually accumulates knowledge,
+reaching increasingly better accuracy and better coverage as
+time passes. However, it is practically not possible to store
+all previous data - be it due to storage constraints or for privacy reasons. Yet updating parameters based only on recent
+data introduces a bias towards that data and a phenomenon
+known as catastrophic interference, in other words degrading performance on older data.
+
+To make progress in this direction, several works have
+opted for a specific experimental setup, consisting of a sequence of distinct tasks, learned one after the other. Each
+time, only the data for the ‘current’ task is available for
+training. We refer to this as task-based sequential learning.
+Training a shared model one task at a time has led to significant progress and new insights towards continual learning,
+such as different strategies for preserving the knowledge of
+previous tasks. However, the methods developed in this specific setup all too often depend on knowing the task boundaries. These boundaries indicate good
+moments to consolidate knowledge, namely after learning a
+task. Moreover, data can be shuffled within a task so as to
+guarantee i.i.d. data. In an online setting, on the other hand,
+data needs to be processed in a streaming fashion and data
+distributions might change gradually.
