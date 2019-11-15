@@ -77,4 +77,5 @@ https://towardsdatascience.com/generative-adversarial-networks-part-ii-6212f7755
 ## Paper review
 ### Knowledge Distillation
 - <a name="todo"></a> Distilling the Knowledge in a Neural Network - Geoffrey Hinton & Oriol Vinyals (**2015**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation.md) 
+- <a name="todo"></a> Learning from a Teacher using Unlabeled Data - Gaurav Menghani & Sujith Ravi (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation2.md) 
 
