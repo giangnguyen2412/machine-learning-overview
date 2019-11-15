@@ -70,7 +70,11 @@ guarantee i.i.d. data. In an online setting, on the other hand,
 data needs to be processed in a streaming fashion and data
 distributions might change gradually.
 
-# Generative Adversaral Networks - GAN
+## Generative Adversaral Networks - GAN
 https://towardsdatascience.com/overview-of-gans-generative-adversarial-networks-part-i-ac78ec775e31
 https://towardsdatascience.com/generative-adversarial-networks-part-ii-6212f7755c1f
+
+## Paper review
+### Knowledge Distillation
+- <a name="todo"></a> Distilling the Knowledge in a Neural Network - Geoffrey Hinton & Oriol Vinyals (**2015**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation.md) 
 
