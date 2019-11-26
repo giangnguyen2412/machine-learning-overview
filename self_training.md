@@ -51,3 +51,8 @@ Finally, in the above, we say that the pseudo labels can
 be soft or hard. In our experiments, we observe that soft
 pseudo labels are usually more stable and lead to faster convergence, especially when the teacher model has low accuracy. Hence we use soft pseudo labels for our experiments
 unless otherwise specified.
+
+
+## Data-balancing - Ensure all classes have the same numbers of images
+We duplicate images in classes where there are not
+enough images. For classes where we have too many images, we take the images with the highest confidence.
