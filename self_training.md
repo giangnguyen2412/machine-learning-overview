@@ -56,3 +56,8 @@ unless otherwise specified.
 ## Data-balancing - Ensure all classes have the same numbers of images
 We duplicate images in classes where there are not
 enough images. For classes where we have too many images, we take the images with the highest confidence.
+
+## My opinions
+
+* I also think it can improve other tasks trained by supervised strategies (object detection/segmentation/captioning etc.)
+* But the self-training and the procedure require EXTREMENLY large computational power. Even on Cloud TPU v3 Pod which has 2048 cores, it takes 3 days. The unlabeled dataset contains 130 million images and more for ImageNet labeled data.
