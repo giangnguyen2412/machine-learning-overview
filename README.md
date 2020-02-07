@@ -77,6 +77,21 @@ distributions might change gradually.
 ## Generative Adversaral Networks - GAN
 https://towardsdatascience.com/overview-of-gans-generative-adversarial-networks-part-i-ac78ec775e31
 https://towardsdatascience.com/generative-adversarial-networks-part-ii-6212f7755c1f
+In training a GAN, we expect the distribution captured by the generator will be the same with the distribution of the real data. When these two distributions are same, this means the generator has converged. To determine whether these two distributions are similar, we use KL divgence which measures how one probability distribution p diverges from another distribution q.
+### DC GAN  (Deep Convolutional Generative Adversarial Networks)
+Which is basically a all-convolutional network version of original GAN. DCGAN demonstrated that GANs can learn distributed representations that disentangle the concept of gender from concept of wearing glasses. 
+(man with glasses) - (man without glasses) + (woman without classes) = woman with glasses
+
+But how should we change the noise if we want to generate images of men with glasses?
+
+GAN uses a simple factored continuous input noise vector z while imposing no restrictions on how the generator may use this noise.
+
+### Info GAN
+InfoGAN tackles the problem by proposing to decompose the input noise vector into two parts:
+
+- z, which is treated as source of incompressible noise
+- c, which is a latent code that targets the salient structured semantic features of
+the data distribution.
 
 ## Paper review
 ### Knowledge Distillation
