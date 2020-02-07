@@ -1,6 +1,10 @@
 # machine-learning-overview
 A bird view over Machine Learning
 
+## Bayesian machine learning
+Uncertainty comes from many sources (inherent uncertainty from future forecase, uncertainty from insufficient observation, or data ambiguity).
+Conventional deep learning only seeks an optimal point of parameters while Bayesian machine learning assumes that the parameters follow some distributions (variance and mean model the uncertainty of the distribution), and is interested in finding the most likely distributions given the data. 
+
 ## Meta learning
 Humans have a remarkable ability to generalize, even with single observation of a class. On the other hand, deep neural networks require large number of training instances to generalize well, and overfits with few training instances.
 
