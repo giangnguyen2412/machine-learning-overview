@@ -93,6 +93,9 @@ InfoGAN tackles the problem by proposing to decompose the input noise vector int
 - c, which is a latent code that targets the salient structured semantic features of
 the data distribution.
 
+### GAN vs VAE
+One problem with VAE is that for having a good approximation of p(x) (where p(x) is the distribution of the images), you need to remember all details in the latent space z. And in the simple framework of the VAE, the approximation of the posterior pθ(z|x) is usually over simplified, because we can’t parametrize complex distribution (it is often a unimodal distribution like an isotropic gaussian).
+
 ## Paper review
 ### Knowledge Distillation
 - <a name="todo"></a> Distilling the Knowledge in a Neural Network - Geoffrey Hinton & Oriol Vinyals (**2015**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation.md) 
