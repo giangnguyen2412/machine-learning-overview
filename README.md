@@ -124,3 +124,14 @@ To tackle this problem, using Confusion Matrix will help.
 ### Meaning of activation function
 1. They determine when a neuron should be activated or deactivated
 2. While tanh or sigmoid has saturation regions, RELU doesnt have. Saturation happens when we change the value of input but the output becomes saturated.
+3. If saturation occurs, the gradient will be zero because the output is not changed, so the network can not learn.
+### Hyper-parameters vs parameters
+- Parameters are values of model generated from the training process to help model the distribution of data.
+- Hyperparameters are the values that are frequently chosen by people such as learning rates, numbers of hidden layers, activation fuction, momentum v.v...
+### When the input image size is doubled, how many times does the number of CNN parameters increase? Why?
+No change, because the number of CNN params only depends on number and size of filters.
+### Dealing with data imbalance?
+1. Using proper evaluation metric such as Confusion matrix or ROC
+2. Ensemble many models. Such as 1000 images of cat and 100 images of dog. We will train 10 models with 100 images of cat and 100 images of dog then ensemble these 10 models to get the only model.
+3. PEnalize the richer classes by loss function.
+### 
