@@ -102,3 +102,25 @@ One problem with VAE is that for having a good approximation of p(x) (where p(x)
 - <a name="todo"></a> Learning from a Teacher using Unlabeled Data - Gaurav Menghani & Sujith Ravi (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation2.md) 
 ### Self-training
 - <a name="todo"></a> Self-training with Noisy Student improves ImageNet classification - Quizhe Xie et al. (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/self_training.md) 
+
+## Common knowledge
+### Why Batch normalization works?
+Assume we have a model y = Wx + b
+When we want to upadte W, we need to use derivative dy = dW.x while x is out input
+
+Apparently, x will affects the derivative value directly. So, If the values of X is not normalized, the gradient value could be fluctuated, thus exacerbating the optimization process.
+
+### Difference betwwen bias and variance
+Bias is the difference between the model's prediction and the grouth truth. The large bias meaning the model can not capture the distribution of data or underfitting.
+Variance is the difference amongst model prediction itself. Usually, if we have large variance, meaning the model try to fit the data, or overfitting.
+We expect our model to achieve low bias and low variance
+### In classification task, is accuracy reliable?
+If there is an imbalance in dataset, the accuracy score makes no sense in practice. For example, if we train a model of 9M images of cats and 1k images of dog. Apparently, the model will highly classify cats correctly with overall accuracy is about ~ 100%. But in practice, this model will surely fail.
+To tackle this problem, using Confusion Matrix will help.
+### How back-propagation works?
+1. Forward propagation to have the loss (discrepancy of output and GT)
+2. Compute derivative for each layer the a network then use optimizer to to perform gradient descent to update the weight.
+3. Backprop uses chain rule to compute the gradient value from the deeeper layer to the shallower layer.
+### Meaning of activation function
+1. They determine when a neuron should be activated or deactivated
+2. While tanh or sigmoid has saturation regions, RELU doesnt have. Saturation happens when we change the value of input but the output becomes saturated.
