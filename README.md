@@ -100,6 +100,7 @@ One problem with VAE is that for having a good approximation of p(x) (where p(x)
 ### Knowledge Distillation
 - <a name="todo"></a> Distilling the Knowledge in a Neural Network - Geoffrey Hinton & Oriol Vinyals (**2015**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation.md) 
 - <a name="todo"></a> Learning from a Teacher using Unlabeled Data - Gaurav Menghani & Sujith Ravi (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/distillation2.md) 
+- <a name="todo"></a> Deep Mutual Learning - DML - Ying Zhange et al. (**2017**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/dml.md)
 ### Self-training
 - <a name="todo"></a> Self-training with Noisy Student improves ImageNet classification - Quizhe Xie et al. (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/self_training.md) 
 
