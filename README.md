@@ -103,6 +103,11 @@ One problem with VAE is that for having a good approximation of p(x) (where p(x)
 - <a name="todo"></a> Deep Mutual Learning - DML - Ying Zhange et al. (**2017**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/dml.md)
 ### Self-training
 - <a name="todo"></a> Self-training with Noisy Student improves ImageNet classification - Quizhe Xie et al. (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/self_training.md) 
+### Weakly-supervised Object Localization
+
+- <a name="todo"></a> Perturbations on the Perceptual Ball - (**2019**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/perc_ball.md) 
+
+- <a name="todo"></a> Learning Deep Features for Discriminative Localization - (**2016**) - [review ](https://github.com/luulinh90s/paper-review-continual-learning/blob/master/CAM.md) 
 
 ## Common knowledge
 ### Why Batch normalization works?
