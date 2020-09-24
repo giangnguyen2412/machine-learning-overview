@@ -140,4 +140,8 @@ No change, because the number of CNN params only depends on number and size of f
 1. Using proper evaluation metric such as Confusion matrix or ROC
 2. Ensemble many models. Such as 1000 images of cat and 100 images of dog. We will train 10 models with 100 images of cat and 100 images of dog then ensemble these 10 models to get the only model.
 3. PEnalize the richer classes by loss function.
-### 
+### My memory blew up when I compute distance b/w two tensors!
+
+- Symptom: I have 2 tensors with the size of 100352. When I call this function to compute the distance b/w them like this: `distance_dict[path] = torch.dist(embedding, feature_vector)` in a `for` loop, my CPU exploded. 
+
+- Solution: You need to check if these two tensors are needing differentiation or not. If they do, the problem comes from the gradient of these tensors. You can use `distance_dict[path] = torch.dist(embedding.detach(), feature_vector.detach()` to get rid of this problem :)
